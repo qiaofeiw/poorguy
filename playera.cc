@@ -20,12 +20,49 @@ EclipseTerm PlayerA::calcMove(){
 	return move;
 }
 
-EclipseTerm PlayerA::bestMove(std::list<EclipseTerm> moves, EclipseTerm currentState){
+EclipseTerm PlayerA::bestMove(EclipseTerm currentState){
 	std::list<EclipseTerm> actions = prolog->getLegalMoves(prolog->getOwnRole(), currentState);	
+        EclipseTerm action;
 	int score = 0;
-	int i;
-	std::ite
+	std::list<EclipseTerm>::const_iterator iter;
+        for (iter = actions.begin(), action = *iter; iter != actions.end(); iter++){
+            std::vector<EclipseTerm> moves;
+            moves.push_back(*iter);
+            int result = maxScore(prolog->getSuccessorState(currentState, moves));
+            if (result == 100) {
+                return *iter;
+            }
+            if (result > score) {
+                score = result;
+                action = *iter;
+            }
+        }
+        return action;
 }
+
+int PlayerA::maxScore(EclipseTerm state){
+        if (prolog->isTerminal(state)) {
+            return prolog->getGoalValues(state)[prolog->getIndexOfRole(prolog->getOwnRole())];
+        }
+        std::list<EclipseTerm> actions = prolog->getLegalMoves(prolog->getOwnRole(), state);
+        int score = 0;
+        std::list<EclipseTerm>::const_iterator iter;
+        for (iter = actions.begin(); iter !=actions.end(); iter++){
+            std::vector<EclipseTerm> moves;
+            moves.push_back(*iter);
+            int result = getOwnScore(prolog->getSuccessorState(state, moves));
+            if (result > score) {
+                score = result;
+            }
+        }
+        return score;
+}
+
+int PlayerA::getOwnScore(EclipseTerm state){
+        std::vector<int> values = prolog->getGoalValues(state);
+        return values[prolog->getIndexOfRole(prolog->getOwnRole())];
+}
+
 
 void PlayerA::cleanUp(){
 	EclipseTerm currentState=prolog->getCurrentState();

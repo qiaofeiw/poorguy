@@ -1,6 +1,6 @@
 
 #for using prolog
-ARCH := x86_64_macosx
+ARCH := x86_64_linux
 # You need to have set ECLIPSE_DIR environment variable to your Eclipse prolog installation directory!
 ECLIPSE_INCLUDE_DIR := $(ECLIPSE_DIR)/include/$(ARCH)
 
