@@ -20,6 +20,13 @@ EclipseTerm PlayerA::calcMove(){
 	return move;
 }
 
+EclipseTerm PlayerA::bestMove(std::list<EclipseTerm> moves, EclipseTerm currentState){
+	std::list<EclipseTerm> actions = prolog->getLegalMoves(prolog->getOwnRole(), currentState);	
+	int score = 0;
+	int i;
+	std::ite
+}
+
 void PlayerA::cleanUp(){
 	EclipseTerm currentState=prolog->getCurrentState();
 	std::cout << "current state:" << currentState << std::endl;
