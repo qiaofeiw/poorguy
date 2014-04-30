@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARCH	BasicPlayer/Makefile	/^ARCH := x86_64_macosx$/;"	m
+ARCH	Makefile	/^ARCH := x86_64_macosx$/;"	m
+BASIC_PLAYER_DIR	Makefile	/^BASIC_PLAYER_DIR := BasicPlayer$/;"	m
+BASIC_PLAYER_LIB	Makefile	/^BASIC_PLAYER_LIB := basicplayer.a$/;"	m
+CPPFLAGS	BasicPlayer/Makefile	/^CPPFLAGS := -I$(ECLIPSE_INCLUDE_DIR)$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS := -I$(ECLIPSE_INCLUDE_DIR) -I$(BASIC_PLAYER_DIR)$/;"	m
+CXXFLAGS	BasicPlayer/Makefile	/^CXXFLAGS := -Wextra -Wall -O2 # -g$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS := -Wall -Wextra -O2 #-g$/;"	m
+DEP	Makefile	/^DEP := $(SRC:.cc=.d)$/;"	m
+ECLIPSETERM_HH	BasicPlayer/EclipseTerm.hh	/^#define ECLIPSETERM_HH$/;"	d
+ECLIPSE_H	BasicPlayer/EclipseTerm.cc	/^#define ECLIPSE_H$/;"	d	file:
+ECLIPSE_H	BasicPlayer/EclipseTerm.hh	/^#define ECLIPSE_H$/;"	d
+ECLIPSE_H	BasicPlayer/PrologConnector.cc	/^#define ECLIPSE_H$/;"	d	file:
+ECLIPSE_INCLUDE_DIR	BasicPlayer/Makefile	/^ECLIPSE_INCLUDE_DIR := $(ECLIPSE_DIR)\/include\/$(ARCH)$/;"	m
+ECLIPSE_INCLUDE_DIR	Makefile	/^ECLIPSE_INCLUDE_DIR := $(ECLIPSE_DIR)\/include\/$(ARCH)$/;"	m
+ECLIPSE_LIB_DIR	Makefile	/^ECLIPSE_LIB_DIR := $(ECLIPSE_DIR)\/lib\/$(ARCH)$/;"	m
+EclipseTerm	BasicPlayer/EclipseTerm.cc	/^EclipseTerm::EclipseTerm(const char *name){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(BidirectionalIterator elementsBegin, BidirectionalIterator elementsEnd){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(const EclipseTerm &term){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(const char *name, const std::list<EclipseTerm> &arguments){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(const pword &init){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(const std::list<EclipseTerm> &listElements){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm(long l){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		template<class InputIterator> EclipseTerm(const char *name, int arity, InputIterator argumentsBegin, const InputIterator &argumentsEnd){$/;"	f	class:EclipseTerm
+EclipseTerm	BasicPlayer/EclipseTerm.hh	/^class EclipseTerm{$/;"	c
+GAMEHTTPSERVER_HH	BasicPlayer/GameHttpServer.hh	/^#define GAMEHTTPSERVER_HH$/;"	d
+GameHttpServer	BasicPlayer/GameHttpServer.cc	/^GameHttpServer::GameHttpServer(unsigned int port){$/;"	f	class:GameHttpServer
+GameHttpServer	BasicPlayer/GameHttpServer.hh	/^class GameHttpServer{$/;"	c
+INVALID	BasicPlayer/PrologConnector.hh	/^typedef enum {INVALID=0, START=1, PLAY=2, STOP=3} MessageType;$/;"	e	enum:__anon1
+LD	Makefile	/^LD := g++$/;"	m
+LD_FLAGS	Makefile	/^LD_FLAGS := $(CXXFLAGS) -L$(ECLIPSE_LIB_DIR)$/;"	m
+LD_LIBS	Makefile	/^LD_LIBS := -leclipse$/;"	m
+LIB	Makefile	/^LIB := $(BASIC_PLAYER_DIR)\/$(BASIC_PLAYER_LIB)$/;"	m
+MessageType	BasicPlayer/PrologConnector.hh	/^typedef enum {INVALID=0, START=1, PLAY=2, STOP=3} MessageType;$/;"	t	typeref:enum:__anon1
+OBJ	BasicPlayer/Makefile	/^OBJ := $(SRC:.cc=.o)$/;"	m
+OBJ	Makefile	/^OBJ := $(SRC:.cc=.o)$/;"	m
+PLAY	BasicPlayer/PrologConnector.hh	/^typedef enum {INVALID=0, START=1, PLAY=2, STOP=3} MessageType;$/;"	e	enum:__anon1
+PROLOGCONNECTOR_HH	BasicPlayer/PrologConnector.hh	/^#define PROLOGCONNECTOR_HH$/;"	d
+Player	BasicPlayer/player.cc	/^Player::Player(){$/;"	f	class:Player
+Player	BasicPlayer/player.cc	/^Player::Player(unsigned int port, unsigned int modus){$/;"	f	class:Player
+Player	BasicPlayer/player.hh	/^class Player$/;"	c
+PlayerA	playera.hh	/^	explicit PlayerA(unsigned int port=12345, unsigned int mode=0) : Player(port, mode) { }$/;"	f	class:PlayerA
+PlayerA	playera.hh	/^class PlayerA : public Player $/;"	c
+PrologConnector	BasicPlayer/PrologConnector.cc	/^PrologConnector::PrologConnector(){$/;"	f	class:PrologConnector
+PrologConnector	BasicPlayer/PrologConnector.hh	/^class PrologConnector {$/;"	c
+SRC	BasicPlayer/Makefile	/^SRC := GameHttpServer.cc PrologConnector.cc EclipseTerm.cc player.cc$/;"	m
+SRC	Makefile	/^SRC := main.cc playera.cc$/;"	m
+START	BasicPlayer/PrologConnector.hh	/^typedef enum {INVALID=0, START=1, PLAY=2, STOP=3} MessageType;$/;"	e	enum:__anon1
+STOP	BasicPlayer/PrologConnector.hh	/^typedef enum {INVALID=0, START=1, PLAY=2, STOP=3} MessageType;$/;"	e	enum:__anon1
+_PLAYERA_HH_	playera.hh	/^#define _PLAYERA_HH_$/;"	d
+_PLAYER_HH_	BasicPlayer/player.hh	/^#define _PLAYER_HH_$/;"	d
+acceptRequest	BasicPlayer/GameHttpServer.cc	/^const std::string GameHttpServer::acceptRequest(void) {$/;"	f	class:GameHttpServer
+calcMove	BasicPlayer/player.cc	/^EclipseTerm Player::calcMove(){$/;"	f	class:Player
+calcMove	playera.cc	/^EclipseTerm PlayerA::calcMove(){$/;"	f	class:PlayerA
+cleanUp	BasicPlayer/player.cc	/^void Player::cleanUp(){$/;"	f	class:Player
+cleanUp	playera.cc	/^void PlayerA::cleanUp(){$/;"	f	class:PlayerA
+clientAddressInfo	BasicPlayer/GameHttpServer.hh	/^		struct sockaddr_in clientAddressInfo;$/;"	m	class:GameHttpServer	typeref:struct:GameHttpServer::sockaddr_in
+connection_fd	BasicPlayer/GameHttpServer.hh	/^		int connection_fd;$/;"	m	class:GameHttpServer
+getArguments	BasicPlayer/EclipseTerm.cc	/^std::list<EclipseTerm> EclipseTerm::getArguments() const {$/;"	f	class:EclipseTerm
+getArity	BasicPlayer/EclipseTerm.cc	/^int EclipseTerm::getArity() const {$/;"	f	class:EclipseTerm
+getCurrentState	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::getCurrentState(){$/;"	f	class:PrologConnector
+getGoalValues	BasicPlayer/PrologConnector.cc	/^std::vector<int> PrologConnector::getGoalValues(const EclipseTerm &state){$/;"	f	class:PrologConnector
+getIndexOfRole	BasicPlayer/PrologConnector.cc	/^int PrologConnector::getIndexOfRole(const EclipseTerm &role){$/;"	f	class:PrologConnector
+getInitialState	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::getInitialState(){$/;"	f	class:PrologConnector
+getLegalMoves	BasicPlayer/PrologConnector.cc	/^std::list<EclipseTerm> PrologConnector::getLegalMoves(const EclipseTerm &role, const EclipseTerm &state){$/;"	f	class:PrologConnector
+getMatchID	BasicPlayer/PrologConnector.cc	/^const char *PrologConnector::getMatchID(){$/;"	f	class:PrologConnector
+getName	BasicPlayer/EclipseTerm.hh	/^		const char* getName() const {$/;"	f	class:EclipseTerm
+getOwnRole	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::getOwnRole(){$/;"	f	class:PrologConnector
+getPlayClock	BasicPlayer/PrologConnector.cc	/^int PrologConnector::getPlayClock(){$/;"	f	class:PrologConnector
+getPword	BasicPlayer/EclipseTerm.hh	/^		pword getPword() const{$/;"	f	class:EclipseTerm
+getRoles	BasicPlayer/PrologConnector.cc	/^std::vector<EclipseTerm> PrologConnector::getRoles(){$/;"	f	class:PrologConnector
+getRules	BasicPlayer/PrologConnector.cc	/^std::list<EclipseTerm> PrologConnector::getRules(){$/;"	f	class:PrologConnector
+getStartClock	BasicPlayer/PrologConnector.cc	/^int PrologConnector::getStartClock(){$/;"	f	class:PrologConnector
+getSuccessorState	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::getSuccessorState(const EclipseTerm &state, std::vector<EclipseTerm> moves){$/;"	f	class:PrologConnector
+handleFirstMessage	BasicPlayer/player.cc	/^void Player::handleFirstMessage()$/;"	f	class:Player
+handleMessage	BasicPlayer/PrologConnector.cc	/^MessageType PrologConnector::handleMessage(const char *message){$/;"	f	class:PrologConnector
+handleNextMessage	BasicPlayer/player.cc	/^MessageType Player::handleNextMessage(){$/;"	f	class:Player
+init	BasicPlayer/EclipseTerm.hh	/^template<class BidirectionalIterator> void EclipseTerm::init(BidirectionalIterator elementsBegin, BidirectionalIterator elementsEnd){$/;"	f	class:EclipseTerm
+init	BasicPlayer/EclipseTerm.hh	/^template<class InputIterator> void EclipseTerm::init(const char *name, int arity, InputIterator argumentsBegin, const InputIterator &argumentsEnd){$/;"	f	class:EclipseTerm
+initGame	BasicPlayer/player.cc	/^void Player::initGame(){$/;"	f	class:Player
+initGame	playera.cc	/^void PlayerA::initGame(){$/;"	f	class:PlayerA
+isCompound	BasicPlayer/EclipseTerm.hh	/^		int isCompound() const {$/;"	f	class:EclipseTerm
+isLong	BasicPlayer/EclipseTerm.hh	/^		bool isLong(long *l) const {$/;"	f	class:EclipseTerm
+isTerminal	BasicPlayer/PrologConnector.cc	/^bool PrologConnector::isTerminal(const EclipseTerm &state){$/;"	f	class:PrologConnector
+isTrue	BasicPlayer/PrologConnector.cc	/^bool PrologConnector::isTrue(const EclipseTerm &fluent, const EclipseTerm &state){$/;"	f	class:PrologConnector
+isTrue	BasicPlayer/PrologConnector.cc	/^bool PrologConnector::isTrue(const char *gdlFluent, const EclipseTerm &state){$/;"	f	class:PrologConnector
+isVariable	BasicPlayer/EclipseTerm.hh	/^		bool isVariable() const {$/;"	f	class:EclipseTerm
+main	main.cc	/^int main(int argc, char* argv[]){$/;"	f
+moveToString	BasicPlayer/PrologConnector.cc	/^const char *PrologConnector::moveToString(const EclipseTerm &move){$/;"	f	class:PrologConnector
+nb_eclipse_terms	BasicPlayer/EclipseTerm.cc	/^	int nb_eclipse_terms=0;$/;"	v
+operator <<	BasicPlayer/EclipseTerm.hh	/^		friend std::ostream & operator<<(std::ostream &ostream, const EclipseTerm &term){$/;"	f	class:EclipseTerm
+operator =	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm& operator=(const EclipseTerm &term)$/;"	f	class:EclipseTerm
+operator =	BasicPlayer/EclipseTerm.hh	/^		EclipseTerm& operator=(const pword &word)$/;"	f	class:EclipseTerm
+operator ==	BasicPlayer/EclipseTerm.hh	/^		bool operator==(const EclipseTerm &term) const$/;"	f	class:EclipseTerm
+panic	BasicPlayer/PrologConnector.cc	/^void panic(char* what_, char* where_)$/;"	f
+parseGdlStateString	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::parseGdlStateString(const char* gdlString){$/;"	f	class:PrologConnector
+parseGdlTermString	BasicPlayer/PrologConnector.cc	/^EclipseTerm PrologConnector::parseGdlTermString(const char* gdlString){$/;"	f	class:PrologConnector
+printStats	BasicPlayer/PrologConnector.cc	/^void PrologConnector::printStats(){$/;"	f	class:PrologConnector
+prolog	BasicPlayer/player.hh	/^	PrologConnector *prolog;$/;"	m	class:Player
+receive	BasicPlayer/GameHttpServer.cc	/^int GameHttpServer::receive(char *buffer, int length) {$/;"	f	class:GameHttpServer
+ref	BasicPlayer/EclipseTerm.hh	/^		ec_ref ref;$/;"	m	class:EclipseTerm
+run	BasicPlayer/player.cc	/^int Player::run(){$/;"	f	class:Player
+sendMove	BasicPlayer/player.cc	/^void Player::sendMove(EclipseTerm &move){$/;"	f	class:Player
+sendResponse	BasicPlayer/GameHttpServer.cc	/^void GameHttpServer::sendResponse(const std::string& message) {$/;"	f	class:GameHttpServer
+sendResponse	BasicPlayer/player.cc	/^void Player::sendResponse(const std::string &response){$/;"	f	class:Player
+server	BasicPlayer/player.hh	/^	GameHttpServer *server;$/;"	m	class:Player
+setLoggerEnabled	BasicPlayer/PrologConnector.cc	/^void PrologConnector::setLoggerEnabled(bool enabled){$/;"	f	class:PrologConnector
+setRules	BasicPlayer/PrologConnector.cc	/^void PrologConnector::setRules(const std::list<EclipseTerm> &rules){$/;"	f	class:PrologConnector
+socket_fd	BasicPlayer/GameHttpServer.hh	/^		int socket_fd;$/;"	m	class:GameHttpServer
+talkModus	BasicPlayer/player.hh	/^	unsigned int talkModus;$/;"	m	class:Player
+toPrologString	BasicPlayer/EclipseTerm.cc	/^const char *EclipseTerm::toPrologString() const {$/;"	f	class:EclipseTerm
+toString	BasicPlayer/EclipseTerm.cc	/^const char *EclipseTerm::toString() const {$/;"	f	class:EclipseTerm
+unify	BasicPlayer/EclipseTerm.hh	/^		bool unify(EclipseTerm &term)$/;"	f	class:EclipseTerm
+waitForConnection	BasicPlayer/GameHttpServer.cc	/^void GameHttpServer::waitForConnection()$/;"	f	class:GameHttpServer
+~EclipseTerm	BasicPlayer/EclipseTerm.hh	/^		~EclipseTerm(){$/;"	f	class:EclipseTerm
+~GameHttpServer	BasicPlayer/GameHttpServer.cc	/^GameHttpServer::~GameHttpServer(){$/;"	f	class:GameHttpServer
+~PrologConnector	BasicPlayer/PrologConnector.cc	/^PrologConnector::~PrologConnector(){$/;"	f	class:PrologConnector

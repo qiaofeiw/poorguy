@@ -1,0 +1,33 @@
+Application: myPlayer - simple General Game Playing Agent
+
+Version: 1.5555555555555555555555555555555555555555555555555555555
+
+Authors: Norbert Manthey <s6886676@mail.inf.tu-dresden.de>
+         Robert Stelzmann <robert.stelzmann@inf.tu-dresden.de>
+         Stephan Schiffel <stephan.schiffel@gmx.de>
+
+License: GPL3
+
+Usage:
+	Before compiling or running the player set the environment variable ECLIPSE_DIR to your Eclipse prolog installation directory.
+	E.g. with "export ECLIPSE_DIR=/foo/bar" in bash or "setenv ECLIPSE_DIR /foo/bar" in csh.
+	
+	Compile the player by running "make".
+	Start the player with "./myPlayer SomePort" where SomePort is the port the player should listen on.
+
+Prerequisites:
+	Eclipse-Prolog 5.10 or higher (http://www.eclipse-clp.org/)
+	(GNU-)make
+	g++
+
+Changelog:
+1.5
+	- fix a bug in getIndexOfRole that lead to a memory leak
+1.4
+	- replaced http server implementation; the old one was buggy
+1.3
+	- add function to replace the rules with new ones
+1.2
+	- fix bug that terms disappear after isTerminal(..) or isTrue(..) that returned false
+1.1
+	- enrich interface of EclipseTerm with functions to decompose/analyze existing terms and create new EclipseTerms
