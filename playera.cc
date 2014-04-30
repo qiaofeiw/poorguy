@@ -16,7 +16,8 @@ EclipseTerm PlayerA::calcMove(){
 	EclipseTerm currentState=prolog->getCurrentState();
 	std::cout << "current state:" << currentState << std::endl;
 	std::cout << "calc the move" << std::endl;
-	EclipseTerm move=prolog->getLegalMoves(prolog->getOwnRole(),currentState).back();
+	//EclipseTerm move=prolog->getLegalMoves(prolog->getOwnRole(),currentState).back();
+        EclipseTerm move = bestMove(currentState);
 	return move;
 }
 
